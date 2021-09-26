@@ -36,13 +36,14 @@ class AppCubit extends Cubit<AppStates>
         "todo.db",
         version: 1,
         onCreate: (database , version){
+          // table tasks
           // id integer
           // title string
-          // date string known as title
+          // date string
           // time string
           // status string
           // string known as text
-          // ( title TEXT ) column name + data type
+          // ( title TEXT ) = (column name + data type)
           print('Database created');
           database.execute(
               'CREATE TABLE tasks (id INTEGER PRIMARY KEY , title TEXT , date TEXT , time TEXT , status TEXT ) '

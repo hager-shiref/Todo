@@ -43,7 +43,7 @@ class HomeLayout extends StatelessWidget {
             floatingActionButton: FloatingActionButton(
               onPressed: (){
                 if(cubit.isBottomSheetShown){
-                 if(titleController.text !="" ||timeController.text !="" || dateController.text !="" ) {
+                 if(titleController.text !="" && timeController.text !="" && dateController.text !="" ) {
                    cubit.insertToDatabase(
                        title: titleController.text,
                        time: timeController.text,
